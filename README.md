@@ -1,4 +1,4 @@
-Stargazer**z** - Export repository Stargazer**s** as JSON
+Stargazer**z** - export repository stargazer**s** profile as JSON
 =========================================
 
 <!-- [![Build Status](https://img.shields.io/circleci/project/FGRibreau/stargazerz.svg)](https://circleci.com/gh/FGRibreau/stargazerz/) [![Coverage Status](https://img.shields.io/coveralls/FGRibreau/stargazerz/master.svg)](https://coveralls.io/github/FGRibreau/stargazerz?branch=master)  -->
