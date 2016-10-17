@@ -41,6 +41,20 @@ email4@waxzce.org
 ...
 ```
 
+Export in CSV format (requires [jsonv](https://github.com/archan937/jsonv.sh)):
+
+```shell
+stargazerz --slug fgribreau/common-env | jq -s . | jsonv fullname,username,worksFor,homeLocation,email,url
+"Eduardo Gutierrez","ecbypi",,"Cambridge, MA","email1@mit.edu",
+"","ibmsoft",,,,
+"Christine van Wyk","Chris10e",,,,
+"Mahesh","maheshsaini89",,"Mumbai","email2@gmail.com",
+"Sudheera Njs","sudheera-goibibo","goibibo.com","Bangalore",,"http://sudhi.in/"
+"Julian Rademacher","moortaube",,"Berlin, Germany",,"https://Blog.moortaube.de"
+"Moe","moesphemie",,"Düsseldorf, Germany",,"http://moe.fut1.com"
+"ADoyle","adoyle-h",,"Hángzhōu, China","email3@gmail.com","http://adoyle.me/blog"
+```
+
 ## Installation
 
 Install with [npm](https://npmjs.org/package/stargazerz).
