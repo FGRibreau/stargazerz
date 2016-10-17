@@ -41,10 +41,10 @@ email4@waxzce.org
 ...
 ```
 
-Export in CSV format (requires [jsonv](https://github.com/archan937/jsonv.sh)):
+Export in CSV format:
 
 ```shell
-stargazerz --slug fgribreau/common-env | jq -s . | jsonv fullname,username,worksFor,homeLocation,email,url
+stargazerz --slug fgribreau/common-env | jq -r '[.fullname,.username,.worksFor,.homeLocation,.email,.url] | @csv
 "Eduardo Gutierrez","ecbypi",,"Cambridge, MA","email1@mit.edu",
 "","ibmsoft",,,,
 "Christine van Wyk","Chris10e",,,,
