@@ -11,6 +11,8 @@ Command line to know more about your GitHub repository stargazers. List every gi
 
 Please **don't use it for evil**, this project **bypass Github rate limiting** through scraping.
 
+![a](http://i.imgur.com/M21OUU7.gif)
+
 ## Usage
 
 
