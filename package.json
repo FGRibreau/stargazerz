@@ -12,7 +12,7 @@
   },
   "main": "stars.js",
   "bin": {
-    "stargazerz": "./bin/stargazerz.js"
+    "stargazerz": "bin/stargazerz.js"
   },
   "repository": {
     "type": "git",
