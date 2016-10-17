@@ -1,0 +1,44 @@
+{
+  "name": "stargazerz",
+  "version": "1.0.0",
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
+  "engines": {
+    "node": "6"
+  },
+
+  "scripts": {
+    "update": "updtr",
+    "changelog": "conventional-changelog -i CHANGELOG.md -s -r 0",
+    "changelog-git": "npm run changelog && git add CHANGELOG.md && git commit -m 'docs(changelog): updated' && git push origin master"
+  },
+  "main": "stars.js",
+  "bin":{
+    "stargazerz":"./bin/stargazerz.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fgribreau/stargazerz.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fgribreau/stargazerz/issues"
+  },
+  "homepage": "https://github.com/fgribreau/stargazerz",
+  "keywords": [
+    "github,",
+    "stars",
+    "stargazerz",
+    "email",
+    "profile"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "conventional-changelog": "^1.1.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "updtr": "^0.2.1"
+  },
+  "dependencies": {
+    "osmosis": "^1.1.1",
+    "yargs": "^6.2.0"
+  },
+  "license": "MIT"
+}
