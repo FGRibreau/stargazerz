@@ -13,6 +13,12 @@ Please **don't use it for evil**, this project **bypass Github rate limiting** t
 
 ![a](http://i.imgur.com/M21OUU7.gif)
 
+
+## Shameless plug
+
+- [**Charts, simple as a URL**. No more server-side rendering pain, 1 url = 1 chart](http://bit.ly/2e1wzfG)
+- [Looking for a free **Redis GUI**?](http://bit.ly/2e1xug6) [Or for **real-time alerting** & monitoring for Redis?](http://bit.ly/2e1y65v)
+
 ## Usage
 
 
