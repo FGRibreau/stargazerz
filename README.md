@@ -3,9 +3,11 @@ Stargazer**z** - export repository stargazer**s** profile as JSON
 
 <!-- [![Build Status](https://img.shields.io/circleci/project/FGRibreau/stargazerz.svg)](https://circleci.com/gh/FGRibreau/stargazerz/) [![Coverage Status](https://img.shields.io/coveralls/FGRibreau/stargazerz/master.svg)](https://coveralls.io/github/FGRibreau/stargazerz?branch=master)  -->
 
-[![Deps](	https://img.shields.io/david/FGRibreau/stargazerz.svg)](https://david-dm.org/FGRibreau/stargazerz) [![NPM version](https://img.shields.io/npm/v/stargazerz.svg)](http://badge.fury.io/js/stargazerz) [![Downloads](http://img.shields.io/npm/dm/stargazerz.svg)](https://www.npmjs.com/package/stargazerz)
+[![Deps](	https://img.shields.io/david/FGRibreau/stargazerz.svg)](https://david-dm.org/FGRibreau/stargazerz) [![NPM version](https://img.shields.io/npm/v/stargazerz.svg)](http://badge.fury.io/js/stargazerz) [![available-for-advisory](https://img.shields.io/badge/available%20for%20consulting%20advisory-yes-ff69b4.svg?)](http://bit.ly/2c7uFJq) ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg)
 
-[![available-for-advisory](https://img.shields.io/badge/available%20for%20consulting%20advisory-yes-ff69b4.svg?)](http://bit.ly/2c7uFJq) ![extra](https://img.shields.io/badge/actively%20maintained-yes-ff69b4.svg)
+<!-- [![Downloads](http://img.shields.io/npm/dm/stargazerz.svg)](https://www.npmjs.com/package/stargazerz)-->
+
+
 
 Command line to know more about your GitHub repository stargazers. List every github profiles (name, emails, ...) of users who starred your project.
 
