@@ -7,6 +7,16 @@ const argv = require('yargs')
   .example('$0 --slug', 'count the lines in the given file')
   .demand('slug')
 
+.describe('paginate', 'should stargazers paginate')
+  .example('$0 --paginate=false', 'deactivate pagination')
+  .boolean('paginate')
+  .default('paginate', true)
+
+.describe('paginate-count', 'how many many page to paginate')
+  .example('$0 --paginate-count=10', 'paginate through 10 pages')
+  .number('paginate-count')
+  .default('paginate-count', 5)
+
 .help('h')
   .alias('h', 'help')
 
@@ -55,10 +65,13 @@ require('needle').request = function(method, href, params, opts, f) {
   return new EventEmitter(); // fake needle function return
 };
 
-osmosis
-  .get(`https://github.com/${argv.slug}/stargazers`)
-  .paginate('.pagination a:last-child')
-  .find('.follow-list-item .follow-list-name')
+let instance = osmosis.get(`https://github.com/${argv.slug}/stargazers`)
+
+if(argv.paginate){
+  instance = instance.paginate('.pagination a:last-child', argv.paginateCount);
+}
+
+instance.find('.follow-list-name a')
   .follow('@href')
   .set({
     'fullname': '.vcard-fullname',
@@ -69,7 +82,9 @@ osmosis
     'email': '.vcard-detail[itemprop="email"]',
     'url': '.vcard-detail[itemprop="url"]'
   })
-  .data(listing => console.log(JSON.stringify(listing)))
+  .data(listing => {
+    console.log(JSON.stringify(listing))
+  })
   .error(function(err) {
     console.error(err);
     process.exit(1);
