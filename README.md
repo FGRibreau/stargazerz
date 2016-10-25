@@ -52,7 +52,7 @@ email4@waxzce.org
 Export in CSV format:
 
 ```shell
-stargazerz --slug fgribreau/common-env | jq -r '[.fullname,.username,.worksFor,.homeLocation,.email,.url] | @csv
+stargazerz --slug fgribreau/common-env | jq -r '[.fullname,.username,.worksFor,.homeLocation,.email,.url] | @csv'
 "Eduardo Gutierrez","ecbypi",,"Cambridge, MA","email1@mit.edu",
 "","ibmsoft",,,,
 "Christine van Wyk","Chris10e",,,,
